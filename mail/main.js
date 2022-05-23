@@ -16,9 +16,11 @@ let loggedIn;
 // ciclo per verificare se l'utente è nella lista
 for (i = 0; i < usersList.length; i++) {
   if (userMail === usersList[i]) {
+    // se è nella lista allora loggedIn ha un valore è nn è più undefined
     loggedIn = [i];
   }
 }
+// stampiamo il risultato
 if (loggedIn === undefined) {
   alert("You are not logged in");
 } else {
